@@ -6,5 +6,10 @@ class SessionsController < ApplicationController
     session[:user_id] = @user.id
   end
 
-  
+  def destroy
+    session.delete :name
+  end
+
+  def new
+  end     
 end
