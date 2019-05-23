@@ -1,0 +1,6 @@
+<h1>Session - User Login</h1>
+<%= form_for({controller: "sessions", action: "create", method: "post"}) do |f| %>
+  Username: <%= f.text_field :name %>
+  Password: <%= f.password_field :password %>
+  <%= submit_field "login" %>
+<% end %>
